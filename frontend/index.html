@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ترجمها — ترجمة المستندات بالذكاء الاصطناعي</title>
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<header>
+  <div class="brand">ترجمها<span>.</span></div>
+  <nav><a href="#how">كيف تعمل؟</a><a href="#pricing">الأسعار</a><a href="#faq">الأسئلة</a></nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="badge">ترجمة ذكية للمستندات</div>
+  <h1>ارفع ملفك.<br><span>دع الذكاء الاصطناعي يترجمه.</span></h1>
+  <p>ترجمة للأبحاث والعقود والملفات الطبية والتقنية ومستندات الأعمال وغيرها، مع سير عمل آلي من الاستلام حتى التسليم.</p>
+  <a class="primary" href="#upload">ابدأ الآن</a>
+</section>
+
+<section id="upload" class="card">
+  <h2>ابدأ طلب ترجمة</h2>
+  <form id="orderForm">
+    <label class="drop" id="drop">
+      <input id="file" type="file" accept=".pdf,.docx,.txt" required>
+      <strong>اضغط لاختيار ملف</strong>
+      <small>PDF · DOCX · TXT</small>
+      <span id="filename"></span>
+    </label>
+
+    <div class="grid">
+      <label>من
+        <select id="source">
+          <option value="ar">العربية</option>
+          <option value="en">English</option><option value="fr">Français</option>
+          <option value="de">Deutsch</option><option value="es">Español</option>
+          <option value="he">עברית</option><option value="tr">Türkçe</option>
+        </select>
+      </label>
+      <label>إلى
+        <select id="target">
+          <option value="en">English</option><option value="ar">العربية</option>
+          <option value="fr">Français</option><option value="de">Deutsch</option>
+          <option value="es">Español</option><option value="he">עברית</option>
+          <option value="tr">Türkçe</option>
+        </select>
+      </label>
+      <label>المجال
+        <select id="domain">
+          <option value="general">عام</option><option value="academic">أكاديمي</option>
+          <option value="legal">قانوني</option><option value="medical">طبي</option>
+          <option value="business">أعمال</option><option value="technical">تقني</option>
+        </select>
+      </label>
+    </div>
+
+    <button class="primary full" type="submit">احسب السعر وأنشئ الطلب</button>
+  </form>
+  <div id="result" class="result hidden"></div>
+</section>
+
+<section id="how" class="features">
+  <div><b>01</b><h3>ارفع</h3><p>ارفع المستند واختر اللغة والمجال.</p></div>
+  <div><b>02</b><h3>نعالج</h3><p>النظام يستخرج المحتوى ويرسله لمسار الترجمة والفحص.</p></div>
+  <div><b>03</b><h3>استلم</h3><p>بعد ربط مزود الترجمة والتسليم، يحصل العميل على الملف النهائي.</p></div>
+</section>
+
+<section id="pricing" class="simple"><h2>تسعير بسيط</h2><p>السعر يبدأ من 5$ ويُحسب مبدئيًا حسب عدد الصفحات والمجال.</p></section>
+<section id="faq" class="simple"><h2>هل الموقع يعمل وحده؟</h2><p>بعد ربط الدفع والتخزين ومزود الترجمة والبريد، يمكن أتمتة دورة الطلب بالكامل تقريبًا، مع تحويل الحالات الاستثنائية إلى مراجعة.</p></section>
+</main>
+
+<footer>© 2026 ترجمها — منصة ترجمة آلية</footer>
+<script src="/assets/app.js"></script>
+</body>
+</html>
